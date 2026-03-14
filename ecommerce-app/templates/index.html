@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>E-Commerce Store</title>
+  </head>
+
+  <body>
+    <h1>Simple E-Commerce Store</h1>
+
+    <h2>Products</h2>
+
+    <ul>
+      {% for product in products %}
+      <li>
+        <b>{{product.name}}</b> - ₹{{product.price}}
+        <a href="/cart">Add to Cart</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <br />
+
+    <a href="/cart">Go to Cart</a>
+  </body>
+</html>
